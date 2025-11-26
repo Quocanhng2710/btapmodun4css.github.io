@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trang chủ — Dự án CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Tên Trang Dự Án</h1>
+
+      <nav class="main-nav" aria-label="Chính">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gallery.html">Bộ sưu tập</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero">
+      <div class="container">
+        <h2>Giới thiệu ngắn gọn</h2>
+        <p>Đoạn mô tả về dự án. Thêm nội dung của bạn vào đây.</p>
+      </div>
+    </section>
+
+    <section class="cards container">
+      <article class="card">
+        <h3>Tiêu đề 1</h3>
+        <p>Một đoạn văn ngắn mô tả mục này.</p>
+      </article>
+
+      <article class="card">
+        <h3>Tiêu đề 2</h3>
+        <p>Một đoạn văn ngắn mô tả mục này.</p>
+      </article>
+
+      <article class="card">
+        <h3>Tiêu đề 3</h3>
+        <p>Một đoạn văn ngắn mô tả mục này.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Lê Quốc Anh</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('primary-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
