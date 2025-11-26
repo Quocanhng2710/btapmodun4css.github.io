@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bộ sưu tập — Dự án CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Bộ sưu tập</h1>
+      <nav class="main-nav" aria-label="Chính">
+        <ul class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gallery.html">Bộ sưu tập</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="container">
+    <h2>Ảnh mẫu</h2>
+    <p>Trang này có ít nhất 5 ảnh (ví dụ 6 ảnh bên dưới).</p>
+    <section class="gallery-grid" aria-label="Bộ sưu tập ảnh">
+      <figure class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_xjFCfQE0a4gTyY8-aRPX1pugyxrIwaQ2vqDpsFJgsU_j6rvJkK0UXA&s" alt="Trafalgar Law"></figure>
+      <figure class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMD7qGkZtt_3lHbSnQZfwLTRc3ak-EClx9koUdnsdFRVRofNvl_GcSRI&s" alt="Trafalgar Law"></figure>
+      <figure class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5-WMKxyn90hOt3QbL8-93dmWpFb6rBnjJqb1v9wqqoWF_RvdnttGfi4A&s" alt="Trafalgar Law"></figure>
+      <figure class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg8s1UKJZo78s28FDiZ9O7x-AaCdLnsxjnQ&s" alt="Trafalgar Law"></figure>
+      <figure class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgoUVo51Hh35Uuvd-G5Dhx5NRaIxGnzu2arw&s" alt="Trafalgar Law"></figure>
+      <figure class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqiazq8ddp6jOCzIjNDrzwFMFy_G_LIh7Dw&s" alt="Trafalgar Law"></figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year2"></span> Lê Quốc Anh</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>
