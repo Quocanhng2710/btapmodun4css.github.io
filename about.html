@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Giới thiệu — Dự án CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Chuyển đến nội dung chính</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Giới thiệu</h1>
+      <nav class="main-nav" aria-label="Chính">
+        <ul class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gallery.html">Bộ sưu tập</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="container">
+    <h2>Về dự án</h2>
+    <p>Thêm thông tin về bạn, nguồn ảnh, công cụ đã sử dụng, và cách kiểm tra khả năng truy cập.</p>
+
+    <section class="flex-examples">
+      <h3>Ví dụ Flex</h3>
+      <div class="img-row" role="list">
+        <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcyzN1ThSrDlJu6-SXcd-kuAEX67rojIAH-A&s" alt="Mô tả 1"></div>
+        <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVJZm9AhLX9DsnFy3VlZtxayCcomu1aAOJPA&s" alt="Mô tả 2"></div>
+        <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0IhZlaO8pOgEILc989XFoHK1XjVW07G50pQ&s" alt="Mô tả 3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year3"></span> Lê Quốc Anh</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year3').textContent = new Date().getFullYear();</script>
+</body>
+</html>
